@@ -27,12 +27,13 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     implementation("software.amazon.awssdk:s3:2.31.22")
+    implementation("software.amazon.awssdk:sqs:2.31.22")
 
     implementation(platform("io.opentelemetry:opentelemetry-bom:1.49.0"))
     implementation("io.opentelemetry:opentelemetry-api:1.49.0")
     implementation("io.opentelemetry.instrumentation:opentelemetry-instrumentation-annotations:2.15.0")
-    implementation("io.opentelemetry.instrumentation:opentelemetry-aws-sdk-2.2-autoconfigure:2.15.0-alpha")
-    implementation("io.opentelemetry.instrumentation:opentelemetry-aws-sdk-2.2:2.15.0-alpha")
+//    implementation("io.opentelemetry.instrumentation:opentelemetry-aws-sdk-2.2-autoconfigure:2.15.0-alpha")
+//    implementation("io.opentelemetry.instrumentation:opentelemetry-aws-sdk-2.2:2.15.0-alpha")
 }
 
 kotlin {
